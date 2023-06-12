@@ -3,6 +3,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -12,59 +19,52 @@
     <header>
       <section class="contenido-seccion-1">
         <p>Grandes ofertas en comederos</p>
-        <p>Español</p>
-        <p>ARG$</p>
+        <div class="money">
+          <p>Español <i class="fa-solid fa-chevron-down"></i></p>
+          <p>ARG$ <i class="fa-solid fa-chevron-down"></i></p>
+        </div>
       </section>
       <section class="contenido-seccion-2">
         <div class="logo">
           <span class="cat">
-            <img src="img/cat.svg" alt="icono gato">
+            <img src="img/cat.svg" alt="icono gato" />
           </span>
           <span id="header-letter-1">Front</span>
           <span id="header-letter-2">Cat&Dog</span>
           <span class="dog">
-            <img src="img/dog.svg" alt="icono perro">
+            <img src="img/dog.svg" alt="icono perro" />
           </span>
-        </div>        <nav>
+        </div>
+        <nav>
           <ul>
-            <img src="img/pawprint_2.svg" height="14" width="15" /><a href=""
-              >Categorías</a
-            >
-          </ul>
-          <ul>
-            <img src="img/pawprint_2.svg" height="14" width="15" /><a href=""
-              >Pets</a
-            >
-          </ul>
-          <ul>
-            <img src="img/pawprint_2.svg" height="14" width="15" /><a href=""
-              >Nosotros</a
-            >
-          </ul>
-          <ul>
-            <img src="img/pawprint_2.svg" height="14" width="15" /><a href=""
-              >Contactanos</a
-            >
+            <li><i class="fa-solid fa-paw"></i><a href="">Categorías</a></li>
+            <li><i class="fa-solid fa-paw"></i><a href="">Pets</a></li>
+            <li><i class="fa-solid fa-paw"></i><a href="">Nosotros</a></li>
+            <li><i class="fa-solid fa-paw"></i><a href="">Contáctanos</a></li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
       <section class="contenido-informacion">
-        <h2>¡Es un placer tenerte aquí!</h2>
-        <p>Comederos descuentos</p>
-        <button type="button">Comederos</button>
+        <div class="titulo">
+          <h2>¡Es un placer tenerte aquí!</h2>
+          <p>Comederos descuentos</p>
+          <button type="button">Comederos</button>
+        </div>
       </section>
+
       <section class="contenido-productos-destacados">
         <div class="foto">
           <img src="img/pawprint_1.svg" alt="foto de huellita" />
         </div>
         <h3>Productos destacados</h3>
         <div class="submenu">
-          <p>
-            <a href="">Comedores</a> - <a href="">Accesorios</a> -
-            <a href="">Comida</a>
-          </p>
+          <p><a href="">Comedores</a></p>
+          <p>-</p>
+          <p><a href="">Accesorios</a></p>
+          <p>-</p>
+          <p><a href="">Comida</a></p>
         </div>
         <section class="contenido-subproductos">
           <article>
@@ -100,34 +100,54 @@
         </form>
       </section>
       <section class="contenido-suscribete">
-        <img src="img/pawprint_3.svg" alt="Enviar email" />
-        <p>Suscríbete para más novedades</p>
-        <form>
-          <input type="email" placeholder="Ingrese tu correo electrónico" />
-          <button type="submit">Suscribirme</button>
-        </form>
+        <div>
+          <img src="img/pawprint_3.svg" alt="Enviar email" />
+          <p>Suscríbete para más novedades</p>
+        </div>
+        <div>
+          <form>
+            <input type="email" placeholder="Ingrese tu correo electrónico" />
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
       </section>
     </main>
     <section class="contenido-informacion-empresa">
-      <img src="img/icon_location.svg" alt="icono localización" />
-      <h3>Localidad</h3>
-      <p>Calle-Provincia</p>
-      <img src="img/icon_telephone.svg" alt="icono teléfono" />
-      <h3>Teléfono</h3>
-      <p>Número de teléfono</p>
-      <img src="img/icon_email.svg" alt="icono email" />
-      <h3>Correo Electrónico</h3>
-      <p>Dirección de correo</p>
-      <div class="logo">
-        <span class="cat">
-          <img src="img/cat.svg" alt="icono gato" />
-        </span>
-        <span id="footer-letter-1">Front</span>
-        <span id="footer-letter-2">Cat&Dog</span>
-        <span class="dog">
-          <img src="img/dog.svg" alt="icono perro" />
-        </span>
-      </div>
+      <article>
+        <div class="informacion">
+          <img src="img/icon_location.svg" alt="icono localización" />
+          <div>
+            <h3>Localidad</h3>
+            <p>Calle-Provincia</p>
+          </div>
+        </div>
+        <div class="informacion">
+          <img src="img/icon_telephone.svg" alt="icono teléfono" />
+          <div>
+            <h3>Teléfono</h3>
+            <p>Número de teléfono</p>
+          </div>
+        </div>
+        <div class="informacion">
+          <img src="img/icon_email.svg" alt="icono email" />
+          <div>
+            <h3>Correo Electrónico</h3>
+            <p>Dirección de correo</p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="logo">
+          <span class="cat">
+            <img src="img/cat.svg" alt="icono gato" />
+          </span>
+          <span id="footer-letter-1">Front</span>
+          <span id="footer-letter-2">Cat&Dog</span>
+          <span class="dog">
+            <img src="img/dog.svg" alt="icono perro" />
+          </span>
+        </div>
+      </article>
     </section>
     <footer>
       <p>Todos los derechos reservados FrontEnd</p>
